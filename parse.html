@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Interactive Map Translator</title>
-    <meta charset="utf-8" />
-</head>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Interactive Map Translator</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
 
-<body>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
 
-	<iframe
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB8JSLpoyBOBU6kLL5pHaTFMyMWAMz3yLw
-    &q=Space+Needle,Seattle+WA" allowfullscreen>
-	</iframe>
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: -25.363882, lng: 131.044922 }
+        });
+
+        map.addListener('click', function(e) {
+    	DropMarkerAndPanTo(e.latLng, map);
+  		});
+      }
+
+      function DropMarkerAndPanTo(latLng, map) {
+		  var marker = new google.maps.Marker({
+		    position: latLng,
+		    map: map
+
+		  });
+
+		  map.panTo(latLng);
+
+		  	var formStr = "<input type='text' id='text4mrkr' value='marker text' /><input type='button' value='submit' onclick='addPlace();' />" 
+
+		  	infowindow.setContent(formStr);
+    		infowindow.setPosition(e.latLng);
+    		infowindow.open(map);
+
+		}
+
+		function addPlace() {
+		    var marker = new google.maps.Marker({map:map, position: infowindow.getPosition()});
+		    marker.htmlContent = document.getElementById('text4mrkr').value;
+		    infowindow.close();
+		    google.maps.event.addListener(marker, 'click', function(evt) {
+		        infowindow.setContent(this.htmlContent);
+		        infowindow.open(map,marker);
+		    });
+		    google.maps.event.addListener(marker, 'rightclick', function() {
+		        this.setMap(null);
+		    });
+		}
 
 
-</body>
+      	
+     //  	map.panTo(position);
+  	  // }
 
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1NCAfwTLKg5BoScl2n7gzz3NqA9H7hAI&callback=initMap">
+    </script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
