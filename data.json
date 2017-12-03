@@ -121,7 +121,7 @@
   },
   {
     "country": "Canada",
-    "language": "English 59"
+    "language": "English"
   },
   {
     "country": "Cape Verde",
@@ -141,7 +141,7 @@
   },
   {
     "country": "China",
-    "language": "Standard Chinese"
+    "language": "Chinese Simplified"
   },
   {
     "country": "Colombia",
@@ -149,15 +149,11 @@
   },
   {
     "country": "Comoros",
-    "language": "Arabic and French"
+    "language": "French"
   },
   {
-    "country": "Congo",
-    "language": "Democratic Republic of the"
-  },
-  {
-    "country": "Congo",
-    "language": "Republic of"
+    "country": "Democratic Republic of the Congo",
+    "language": "French"
   },
   {
     "country": "Costa Rica",
@@ -189,7 +185,7 @@
   },
   {
     "country": "Djibouti",
-    "language": "French and Arabic"
+    "language": "French"
   },
   {
     "country": "Dominica",
@@ -241,7 +237,7 @@
   },
   {
     "country": "France",
-    "language": "French 1"
+    "language": "French"
   },
   {
     "country": "Gabon",
@@ -417,11 +413,11 @@
   },
   {
     "country": "Madagascar",
-    "language": "Malagasy and French"
+    "language": "Malagasy"
   },
   {
     "country": "Malawi",
-    "language": "Chichewa 57"
+    "language": "Chichewa"
   },
   {
     "country": "Malaysia",
@@ -437,7 +433,7 @@
   },
   {
     "country": "Malta",
-    "language": "Maltese and English"
+    "language": "Maltese"
   },
   {
     "country": "Marshall Islands",
@@ -449,7 +445,7 @@
   },
   {
     "country": "Mauritius",
-    "language": "English less than"
+    "language": "English"
   },
   {
     "country": "Mexico",
@@ -473,7 +469,7 @@
   },
   {
     "country": "Montenegro",
-    "language": "Serbian/Montenegrin"
+    "language": "Serbian"
   },
   {
     "country": "Morocco",
@@ -521,7 +517,7 @@
   },
   {
     "country": "Norway",
-    "language": "Bokmål Norwegian"
+    "language": "Norwegian"
   },
   {
     "country": "Oman",
@@ -533,11 +529,11 @@
   },
   {
     "country": "Palau",
-    "language": "Palauan 64"
+    "language": "Palauan"
   },
   {
     "country": "Palestinian State (proposed)",
-    "language": "Palauan 64"
+    "language": "Palauan"
   },
   {
     "country": "Panama",
@@ -629,7 +625,7 @@
   },
   {
     "country": "Singapore",
-    "language": "Mandarin"
+    "language": "Simplified Chinese"
   },
   {
     "country": "Slovakia",
@@ -649,7 +645,7 @@
   },
   {
     "country": "South Africa",
-    "language": "IsiZulu 23"
+    "language": "Zulu"
   },
   {
     "country": "South Sudan",
@@ -657,7 +653,7 @@
   },
   {
     "country": "Spain",
-    "language": "Castilian Spanish"
+    "language": "Spanish"
   },
   {
     "country": "Sri Lanka",
@@ -689,7 +685,7 @@
   },
   {
     "country": "Taiwan",
-    "language": "Chinese"
+    "language": "Chinese Traditional"
   },
   {
     "country": "Tajikistan",
@@ -757,15 +753,15 @@
   },
   {
     "country": "Uzbekistan",
-    "language": "Uzbek 74"
+    "language": "Uzbek"
   },
   {
     "country": "Vanuatu",
     "language": "Bislama"
   },
   {
-    "country": "Vatican City (Holy See)",
-    "language": "Bislama"
+    "country": "Vatican City",
+    "language": "Latin"
   },
   {
     "country": "Venezuela",
@@ -773,10 +769,6 @@
   },
   {
     "country": "Vietnam",
-    "language": "Vietnamese"
-  },
-  {
-    "country": "Western Sahara (proposed state)",
     "language": "Vietnamese"
   },
   {
